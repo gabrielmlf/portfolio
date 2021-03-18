@@ -1,0 +1,17 @@
+<div *ngFor="let project of projects">
+    <div class="card">
+        <div class="info-text">
+            <h2 class="tittle">{{project.name}}</h2>
+            <span class="description">{{project.description}}</span>
+        </div>
+        <div class="images">
+            <img src="../../../assets/project-images/placeholder252x180.jpg">
+        </div>
+        <div class="external-links">
+            <a href='{{project.github}}' target="_blank">
+                <fa-icon [icon]="githubIcon"></fa-icon>
+                See it on GitHub
+            </a>
+        </div>
+    </div>
+</div>
